@@ -1,0 +1,40 @@
+  *{
+        box-sizing: border-box;
+      }
+      p{
+        color: blue;
+        text-align: center;
+        font-style: italic;
+      }
+      h1{
+        float: right;
+      }
+
+      /*****For large devices********/
+      @media (min-width : 992px){
+      .col-lg{
+        float: left;
+        border: 2px solid black;
+        width: 33.33%;
+      }}
+
+      /*****For medium devices*******/
+      @media (min-width : 768px) and (max-width: 991px){
+        .col-md-1, .col-md-2{
+          float: left;
+          border: 2px solid black;
+        }
+        .col-md-1{
+          width: 50%;
+        }
+        .col-md-2{
+          width: 100%;
+        }
+      }
+
+      /* For small devices */
+      @media (max-width : 767px){
+      .col-sm{
+        border: 2px solid black;
+        width: 100%
+      }}
